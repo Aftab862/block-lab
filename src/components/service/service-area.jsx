@@ -12,10 +12,10 @@ const ServiceArea = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="tp-service-breadcrumb-title-wrapper">
-                <span className="tp-section-title__pre">
+                {/* <span className="tp-section-title__pre">
                   service <span className="title-pre-color">IT Solutions</span>
                   <AngleArrow />
-                </span>
+                </span> */}
                 <h3 className="tp-section-title">
                   Best Digital <span className="title-color">Technology</span>{" "}
                   <br /> Agency For People
@@ -32,29 +32,28 @@ const ServiceArea = () => {
               </div>
             </div>
           </div>
- <div className="row">
-  {our_service_data.map((item, i) => (
-    <div key={i} className="col-xl-3 col-lg-4 col-md-6 mb-3">
-      <div className="tp-service-3-content breadcrumb-item mb-30 d-flex flex-column h-100">
-        <div className="tp-service-3-content-thumb">
-          <Image src={item.icon} alt="theme-pure" />
-        </div>
-        <h4 className="tp-service-breadcrumb-title">
-          <Link href="/service-details">{item.title}</Link>
-        </h4>
-        <p className="flex-grow-1">{item.description}</p>
-        <div className="tp-service-btn mt-auto">
-          <Link href="/service-details">
-            Read More <i className="fa-solid fa-arrow-up-right"></i>
-          </Link>
-        </div>
-      </div>
-    </div>
-  ))}
-</div>
+          <div className="row">
+            {our_service_data.map((item, i) => (
+              <div key={i} className="col-xl-3 col-lg-4 col-md-6 mb-3">
+                <div className="tp-service-3-content breadcrumb-item mb-30 d-flex flex-column h-100">
+                  <div className="tp-service-3-content-thumb">
+                    <Image src={item.icon} alt="theme-pure" />
+                  </div>
+                  <h4 className="tp-service-breadcrumb-title">
+                    <Link href="/service-details">{item.title}</Link>
+                  </h4>
+                  <p className="flex-grow-1">{item.description}</p>
+                  {/* <div className="tp-service-btn mt-auto">
+                    <Link href="/service-details">
+                      Read More <i className="fa-solid fa-arrow-up-right"></i>
+                    </Link>
+                  </div> */}
+                </div>
+              </div>
+            ))}
+          </div>
 
-
-          <div className="row justify-content-center">
+          {/* <div className="row justify-content-center">
             <div className="col-xl-8 text-center">
               <div className="tp-about-call fadeUp">
                 <a href="tel:01310-069824">
@@ -66,7 +65,7 @@ const ServiceArea = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
