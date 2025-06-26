@@ -67,7 +67,7 @@ const ContactArea = () => {
             <div className="col-lg-6">
               <div className="tp-contact-form">
                 <h3 className="tp-contact-title ">
-                  Contact <span className="title-color">With us</span>
+                  Contact <span className="title-color"> Us</span>
                 </h3>
                 <p>
                   Your email address will not be published. Required fields{" "}
