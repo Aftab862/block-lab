@@ -13,7 +13,9 @@ const footer_content = {
     mail: "@themepure.gmail.com",
     contact_text: "PERFECT SOLUTION From  It Advisor",
     phone: "92 666 888 0000",
-    info: <>The world’s first and largest digital market for crypto collectibles and non-fungible (NFTs). Buy</>,
+    info: <> At BlockLab, we don’t just create digital products — we design experiences that move people.
+From startups to big brands, we bring bold ideas to life with smart design, powerful tech, and strategic thinking.
+    </>,
     map: "https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1",
     address: <>86 Road Broklyn Street, 600 <br /> New York, USA</>,
     mail_2: "needhelp@company.com",
@@ -88,6 +90,10 @@ const Footer = () => {
                                                 <i className="fa-light fa-message-dots"></i>{mail_phone}</a>
                                         </div> */}
                                     </div>
+                                      <div className="tp-footer-widget-social">
+                                    <SocialLinks /> 
+
+                                </div>
                                 </div>
                                 </div>
                             </div>
