@@ -1,17 +1,17 @@
 
-import service_icon_1 from "@assets/img/services/home-3/1.png";
-import service_icon_2 from "@assets/img/services/home-3/2.png";
-import service_icon_3 from "@assets/img/services/home-3/3.png";
-import service_icon_4 from "@assets/img/services/home-3/4.png";
+import service_icon_1 from "../../public/assets/img/services/home-3/1.png";
+import service_icon_2 from "../../public/assets/img/services/home-3/2.png";
+import service_icon_3 from "../../public/assets/img/services/home-3/3.png";
+import service_icon_4 from "../../public/assets/img/services/home-3/4.png";
 
 
-import service_icon_5 from "@assets/img/services/home-3/5.png";
-import service_icon_6 from "@assets/img/services/home-3/6.png";
-import service_icon_7 from "@assets/img/services/home-3/7.png";
-import service_icon_8 from "@assets/img/services/home-3/8.png";
+import service_icon_5 from "../../public/assets/img/services/home-3/5.png";
+import service_icon_6 from "../../public/assets/img/services/home-3/6.png";
+import service_icon_7 from "../../public/assets/img/services/home-3/7.png";
+import service_icon_8 from "../../public/assets/img/services/home-3/8.png";
 
-import service_icon_9 from "@assets/img/services/home-3/9.png";
-import service_icon_10 from "@assets/img/services/home-3/10.png";
+import service_icon_9 from "../../public/assets/img/services/home-3/9.png";
+import service_icon_10 from "../../public/assets/img/services/home-3/10.png";
 
 
 
