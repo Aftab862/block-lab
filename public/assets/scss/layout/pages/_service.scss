@@ -165,7 +165,7 @@
             position: relative;
             background: #020626;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 58px 40px 36px 39px;
+            padding: 39px 40px 36px 39px;
             &.breadcrumb-item{
                 background-color: var(--tp-common-white);
                 border: 1px solid rgba(181, 182, 196, 0.28);
@@ -201,19 +201,19 @@
             &-thumb{
                 position: relative;
                 &::before{
-                    position: absolute;
+                    // position: absolute;
                     content: '';
-                    top: -15px;
-                    left: 25px;
-                    height: 46px;
-                    width: 46px;
-                    background: rgba(255, 255, 255, 0.09);
-                    border-radius: 50%;
+                    // top: -15px;
+                    // left: 10px;
+                    // height: 46px;
+                    // width: 46px;
+                   // background: rgba(255, 255, 255, 0.09);
+                    // border-radius: 50%;
                 }
                 & img{
                     margin-bottom: 30px;
-                    width: 44px;
-                    height: 44px;
+                    width: 120px;
+                    height: 120px;
                 }
             }
             & p{
