@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 // import Link from 'next/link';
 // import Image from 'next/image';
 // import AngleArrow from '@/src/svg/angle-arrow';
@@ -37,8 +37,10 @@
 // ]
 
 
-// const ServiceArea = () => {
-//     return (
+const ServiceArea = () => {
+return null;
+}
+    //     return (
 //         <>
 //             <section className="tp-service-3-area p-relative pt-120 pb-60" 
 //                 style={{backgroundImage: `url(/assets/img/services/home-3/service-bg.png)`}}>
@@ -103,4 +105,5 @@
 //     );
 // };
 
-// export default ServiceArea;
+ export default ServiceArea;
+
