@@ -41,8 +41,10 @@ const Footer = () => {
     return (
         <>
             <footer className="tp-footer-area p-relative">
-                <div className="tp-footer-bg" style={{backgroundImage: `url(/assets/img/footer/footer-bg.jpg)`}}></div>
-                <div className="tp-footer-top-shape" style={{backgroundImage: `url(/assets/img/footer/footer-top-bg.png)`}}></div>
+                <div className="tp-footer-bg" 
+                // style={{backgroundImage: `url(/assets/img/footer/footer-bg.jpg)`}}
+                ></div>
+                {/* <div className="tp-footer-top-shape" style={{backgroundImage: `url(/assets/img/footer/footer-top-bg.png)`}}></div> */}
                 
                 <div className="container container-large">
 

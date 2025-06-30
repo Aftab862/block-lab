@@ -2,25 +2,25 @@ import Link from "next/link";
 
 
 const social_links = [
+  // {
+  //   link: "http://facebook.com",
+  //   target: "_blank",
+  //   icon: "fab fa-facebook-f", 
+  // },
   {
-    link: "http://facebook.com",
-    target: "_blank",
-    icon: "fab fa-facebook-f", 
-  },
-  {
-    link: "http://twitter.com",
+    link: "https://x.com/Blocklabtech",
     target: "_blank",
     icon: "fab fa-twitter", 
   },
   {
-    link: "https://www.instagram.com",
+    link: "https://www.linkedin.com/company/94862954/admin/dashboard/",
     target: "_blank",
-    icon: "fa-brands fa-instagram", 
+    icon: "fa-brands fa-linkedin", 
   }, 
   {
-    link: "https://www.pinterest.com",
+    link: "https://www.youtube.com/@BlockLabTech",
     target: "_blank",
-    icon: "fa-brands fa-pinterest", 
+    icon: "fa-brands fa-youtube", 
   },
 ];
 
