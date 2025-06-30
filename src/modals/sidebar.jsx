@@ -58,7 +58,7 @@ const Sidebar = ({sidebarOpen, setSidebarOpen, home_three}) => {
                     <div className="tp-mobile-menu-pos mean-container d-lg-none">
                         <MobileMenus />
                     </div>
-                    <div className="offcanvas__popup">
+                    {/* <div className="offcanvas__popup">
                         <p>Web designing in a powerful way of just not an only professions. We have tendency to believe the idea that smart looking .</p>
                         <div className="offcanvas__popup-gallery">
                             <h4 className="offcanvas__title">Gallery</h4>
@@ -70,39 +70,39 @@ const Sidebar = ({sidebarOpen, setSidebarOpen, home_three}) => {
                                 </a>
                             )}
                         </div>
-                    </div>
+                    </div> */}
                     <div className="offcanvas__contact">
                         <h4 className="offcanvas__title">Contacts</h4>
-                        <div className="offcanvas__contact-content d-flex">
+                        {/* <div className="offcanvas__contact-content d-flex">
                             <div className="offcanvas__contact-content-icon">
                             <i className="fa-sharp fa-solid fa-location-dot"></i>
                             </div>
                             <div className="offcanvas__contact-content-content">
                             <a href="https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1">86 Road Broklyn Street, 600 </a>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="offcanvas__contact-content d-flex">
                             <div className="offcanvas__contact-content-icon">
                             <i className="fa-solid fa-envelope"></i>
                             </div>
                             <div className="offcanvas__contact-content-content">
-                            <a href="mailto:needhelp@company.com">Needhelp@company.com  </a>
+                            <a href="mailto:info@blocklab.com">info@blocklab.com  </a>
                             </div>
                         </div>
-                        <div className="offcanvas__contact-content d-flex">
+                        {/* <div className="offcanvas__contact-content d-flex">
                             <div className="offcanvas__contact-content-icon">
                             <i className="fa-solid fa-phone"></i>
                             </div>
                             <div className="offcanvas__contact-content-content">
                             <a href="tel:01310-069824"> +92 666 888 0000</a>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="offcanvas__social"> 
-                        <a className="icon facebook" href="#"><i className="fab fa-facebook-f"></i></a>
-                        <a className="icon twitter" href="#"><i className="fab fa-twitter"></i></a>
-                        <a className="icon youtube" href="#"><i className="fab fa-youtube"></i></a>
-                        <a className="icon linkedin" href="#"><i className="fab fa-linkedin"></i></a>
+                        {/* <a className="icon facebook" href="#"><i className="fab fa-facebook-f"></i></a> */}
+                        <a className="icon twitter" href="https://x.com/Blocklabtech"><i className="fab fa-twitter"></i></a>
+                        <a className="icon youtube" href="https://www.youtube.com/@BlockLabTech"><i className="fab fa-youtube"></i></a>
+                        <a className="icon linkedin" href="https://www.linkedin.com/company/94862954/admin/dashboard/"><i className="fab fa-linkedin"></i></a>
                     </div>
                 </div>
                 </div>
