@@ -12,7 +12,7 @@ const Breadcrumb = ({
       <section
         className="breadcrumb__area breadcrumb-style pt-190 pb-210 p-relative z-index-1"
         style={{
-          backgroundImage: `url(/assets/img/breadcrumb/breadcrumb-bg-1.jpg)`,
+          backgroundImage: top_title ==="Contact Us" ? `url(/assets/img/breadcrumb/contact.jpg`:  `url(/assets/img/breadcrumb/breadcrumb-bg-1.jpg)`,
         }}
       >
         <div className="breadcrumb__bg-overlay m-img"></div>
