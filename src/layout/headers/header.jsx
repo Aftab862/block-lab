@@ -163,11 +163,11 @@ const HeaderOne = () => {
                 </div>
                 <div className="col-xxl-3 col-xl-3">
                   <div className="tp-header-main-right d-flex align-items-center justify-content-xl-end">
-                    <div className="tp-header-search search-open-btn d-none d-xxl-block">
+                    {/* <div className="tp-header-search search-open-btn d-none d-xxl-block">
                       <button onClick={() => setSearchOpen(true)}>
                         <i className="fa-regular fa-magnifying-glass"></i>
                       </button>
-                    </div>
+                    </div> */}
                     <div className="tp-header-btn d-none d-xl-block pl-40">
                       <Link className="tp-btn" href="/contact">
                         Get Started Today
