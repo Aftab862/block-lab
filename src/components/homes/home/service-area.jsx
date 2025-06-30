@@ -50,7 +50,7 @@ const ServiceArea = () => {
     type: "loop",
     drag: "free",
     pagination: false,
-    arrows: false,
+    arrows: true,
     perPage: 5,
     gap: "30px",
     breakpoints: {

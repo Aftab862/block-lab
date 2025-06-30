@@ -99,8 +99,8 @@ const service_data = [
     id: 7,
     alphabet: "M",
     title: (
-      <>
-        3D <br /> Modeling
+      <>3D Modeling
+      <br />  and Animation
       </>
     ),
     img: service_img_2,
@@ -115,7 +115,7 @@ const service_data = [
     alphabet: "R",
     title: (
       <>
-        3D <br /> Rendering
+        Product Animation  <br /> and CGI Advertisement
       </>
     ),
     img: service_img_2,
