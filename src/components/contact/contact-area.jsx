@@ -9,7 +9,7 @@ const ContactArea = () => {
       <section className="tp-contact-area pt-50 pb-50">
         <div className="container">
           <div className="row justify-content-center">
-            {/* <div className="col-lg-6">
+            <div className="col-lg-6">
               <div className="tp-contact-wrapper">
                 <div className="tp-contact-title-wrapper">
                   <h3 className="tp-contact-title">
@@ -29,12 +29,12 @@ const ContactArea = () => {
                       </span>
                     </div>
                     <h3 className="tp-contact-item-title">
-                      <a href="mailto:@themepure.gmail.com">
-                        thepureingsai.co.uk
+                      <a href="mailto:info@blocklab.com">
+                        info@blocllab.com
                       </a>
                     </h3>
                   </div>
-                  <div className="tp-contact-content-phone d-flex align-items-center">
+                  {/* <div className="tp-contact-content-phone d-flex align-items-center">
                     <div className="tp-contact-content-phone-icon">
                       <span>
                         <PhoneIcon />
@@ -43,8 +43,8 @@ const ContactArea = () => {
                     <h3 className="tp-contact-item-title">
                       <a href="tel:9266688000">+880 123 456 789 , 99875</a>
                     </h3>
-                  </div>
-                  <div className="tp-contact-location-wrapper d-flex">
+                  </div> */}
+                  {/* <div className="tp-contact-location-wrapper d-flex">
                     <div className="tp-contact-location">
                       <h3 className="tp-contact-location-title">
                         Office Location
@@ -59,10 +59,10 @@ const ContactArea = () => {
                       </h3>
                       <p>4517 Washington Ave. Manch ester, Kentucky 39495</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>  
               </div>
-            </div> */}
+            </div>
 
             <div className="col-lg-6">
               <div className="tp-contact-form">
