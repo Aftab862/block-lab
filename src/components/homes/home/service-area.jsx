@@ -214,7 +214,7 @@ const ServiceArea = () => {
                 </div>
               </div>
 
-              <div className="col-lg-6 col-md-12">
+              <div className="col-lg-6 col-md-12 text-center">
                 <div className="tp-fun-fact-content">
                   <div className="tp-fun-fact-title-wrapper">
                     {/* <span className="tp-section-title__pre">
