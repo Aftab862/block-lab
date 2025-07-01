@@ -56,18 +56,22 @@ const ServiceArea = () => {
     breakpoints: {
       1800: {
         perPage: 5,
+         gap: "30px",
       },
       1500: {
         perPage: 4,
+         gap: "30px",
       },
       1200: {
         perPage: 3,
+         gap: "30px",
       },
       800: {
         perPage: 2,
       },
       566: {
         perPage: 1,
+        gap:"0px"
       },
     },
   };
