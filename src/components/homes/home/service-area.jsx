@@ -128,7 +128,7 @@ const ServiceArea = () => {
                         </div>
                         <h3 className="service-title">{item.title}</h3>
                         <div className="tp-service-icon">
-                          <Image src={item.img} alt="theme-pure" />
+                          <Image src={item.img} width={150} alt="theme-pure" />
                         </div>
                         <p className="hide-text">{item.description}</p>
                         {/* <div className="tp-service-btn">
