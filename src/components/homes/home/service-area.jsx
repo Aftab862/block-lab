@@ -191,7 +191,7 @@ const ServiceArea = () => {
             </div>
 
             <div className="row">
-              <div className="col-lg-2 col-md-4">
+              <div className="col-lg-2 col-md-4 d-flex justify-content-center">
                 <div className="tp-fun-fact-wrapper-box">
                   {counter_content.map((item, i) => (
                     <div key={i} className="tp-fun-fact-wrapper">
