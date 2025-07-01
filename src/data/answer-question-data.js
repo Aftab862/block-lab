@@ -26,10 +26,9 @@ const answer_question_data = [
       </>
     ),
     accordion_id: "2",
-    collapsed: "",
-    aria_expanded: true,
-    show: true,
-    active: "tp-faq-active",
+    collapsed: "collapsed",
+    aria_expanded: false,
+    active: "",
   },
   {
     id: 3,
