@@ -162,13 +162,13 @@ const HeroSlider = () => {
             </button>
           </div>
 
-          <div className="tp-hero-bottom">
+          {/* <div className="tp-hero-bottom">
             <div className="tp-hero-experince">
               <span className="year"> 13
                 <br /> <i className="experince">Years of Experince</i>
               </span>
             </div>
-          </div>
+          </div> */}
 
           <div
             className="tp-hero-service"

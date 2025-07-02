@@ -11,6 +11,9 @@ import SliderArea from "./slider-area";
 import FaqArea from "./faq-area";
 import BlogArea from "./blog-area";
 import Footer from "@/src/layout/footers/footer";
+import CategoryArea from  "../home-3/category-area";
+
+
 
 const HomeOne = () => {
   return (
@@ -21,8 +24,8 @@ const HomeOne = () => {
         {/* <AboutArea /> */}
         {/* <FeatureArea /> */}
         <ServiceArea />
-        <BrandArea />
-        <SupportArea />
+       <CategoryArea />
+        {/* <SupportArea /> */}
         {/* <TestimonialArea /> */}
         <SliderArea />
         <FaqArea />

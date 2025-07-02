@@ -30,19 +30,19 @@ const counter_content = [
   },
   {
     id: 2,
-    count: 255,
-    info: "square area",
+    count: 35,
+    info: "clients",
     cls: "purecounter",
     cls_2: "",
-    icon: "",
+    icon: "+",
   },
   {
     id: 3,
-    count: 310,
-    info: "square area",
+    count: 75,
+    info: "Projects",
     cls: "purecounter",
     cls_2: "",
-    icon: "",
+    icon: "+",
   },
 ];
 const ServiceArea = () => {
@@ -168,11 +168,11 @@ const ServiceArea = () => {
                 src={fun_fact_shape_1}
                 alt="theme-pure"
               />
-              <Image
+              {/* <Image
                 className="shape-2"
                 src={fun_fact_shape_2}
                 alt="theme-pure"
-              />
+              /> */}
               <Image
                 className="shape-3"
                 src={fun_fact_shape_3}
@@ -183,11 +183,11 @@ const ServiceArea = () => {
                 src={fun_fact_shape_4}
                 alt="theme-pure"
               />
-              <Image
+              {/* <Image
                 className="shadow"
                 src={fun_fact_shape_5}
                 alt="theme-pure"
-              />
+              /> */}
             </div>
 
             <div className="row">
