@@ -54,7 +54,7 @@ const IndustryArea = ({ service }) => {
                   <h3 className="tp-industry-content-title">
                     Best IT & Technology Agency <br /> For Your Business
                   </h3>
-                  <div className="tp-industry-thumb-wrapper d-flex">
+                  <div className="tp-industry-thumb-wrapper d-flex justify-content-around">
                     <div className="tp-industry-thumb text-center">
                       <Image src={industry_icon_1} alt="theme-pure" />
                       <h4 className="tp-industry-title">Business</h4>
@@ -84,9 +84,10 @@ const IndustryArea = ({ service }) => {
               <div className="tp-industry-wrapper mb-30 fadeRight">
                 <div className="tp-industry-tab">
                   <ul
-                    className="nav nav-pills mb-3"
+                    className="nav nav-pills mb-3 flex-nowrap"
                     id="pills-tab"
                     role="tablist"
+                    style={{ overflowX :"scroll"}}
                   >
                     <li className="nav-item" role="presentation">
                       <button
