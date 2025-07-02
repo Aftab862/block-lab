@@ -30,7 +30,7 @@ const ContactArea = () => {
                     </div>
                     <h3 className="tp-contact-item-title">
                       <a href="mailto:info@blocklab.com">
-                        info@blocllab.com
+                        info@blocklab.com
                       </a>
                     </h3>
                   </div>
