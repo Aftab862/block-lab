@@ -17,17 +17,16 @@ const ServiceArea = () => {
                   <AngleArrow />
                 </span> */}
                 <h3 className="tp-section-title">
-                  Best Digital <span className="title-color">Technology</span>{" "}
-                  <br /> Agency For People
+                Explore Our  
+                  <br /> <span className="title-color"> Digital & IT Services</span>
                 </h3>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="tp-service-breadcrumb-title-wrapper justify-content-start justify-content-xl-end d-flex">
                 <p>
-                  As the complexity of buildings to increase, the field of
-                  architecture <br />
-                  became multi-disciplinary with technological expertise.
+                  At BlockLab, we offer a full spectrum of cutting-edge IT and creative services designed to help businesses grow, innovate, and lead in the digital world.
+
                 </p>
               </div>
             </div>
@@ -39,12 +38,12 @@ const ServiceArea = () => {
                   <div className="tp-service-3-content-thumb">
                     <Image src={item.icon} alt="theme-pure" />
                   </div>
-                  <h4 className="tp-service-breadcrumb-title">
+                  <p className="tp-service-breadcrumb-title text-black fs-5 fw-normal">
                     {/* <Link href="/service-details"> */}
                     {item.title}
 
                     {/* </Link> */}
-                  </h4>
+                  </p>
                   <p className="flex-grow-1">{item.description}</p>
                   {/* <div className="tp-service-btn mt-auto">
                     <Link href="/service-details">

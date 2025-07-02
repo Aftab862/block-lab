@@ -59,10 +59,10 @@ const CategoryArea = () => {
                 <div className="row">
                     <div className="col-xl-12">
                         <div className="tp-category-title-wrapper text-center">
-                            <span className="tp-section-title__pre">
+                            {/* <span className="tp-section-title__pre">
                             feature <span className="title-pre-color">IT Solutions</span>
                             <AngleArrow /> 
-                            </span>
+                            </span> */}
                             <h3 className="tp-section-title">
                                 Best Digital <span className="title-color">Technology</span> <br /> Agency For People
                             </h3>

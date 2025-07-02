@@ -13,13 +13,17 @@ import support_img_3 from "@assets/img/about/home-3/img-3.jpg";
 import support_shape from "@assets/img/about/home-3/shape-1.png";
 
 const support_contact = {
-   sub_title_1: "We’ve been stay",
-   sub_title_2: " 38 years",
-   info: <>Our company provides a full range of services for the <br /> construction of private houses and cottages since 19</>,
+   sub_title_1: "Proudly Here for",
+   sub_title_2: " 2 years",
+   info: <>
+    Our company has been delivering complete IT services worldwide for 2 years.
+   we helped clients around the world to solve real problems through smart and effective IT solutions.
+
+   </>,
    lists: [
-      <>series of manual and semi-manual activities.</>,
-      <>Construction is different from other industries.</>,
-      <>Construction is different from other industries.</>,
+      <>Serving clients across multiple countries with tailored digital services.</>,
+      <>From development to design, we cover all major IT needs.</>,
+      <>Delivering consistent value through innovation and expertise.</>,
    ]
    
 }
@@ -35,10 +39,10 @@ const SupportArea = ()  => {
             <div className="row">
                <div className="col-lg-6">
                   <div className="tp-fun-fact-title-wrapper support-breadcrumb">
-                     <span className="tp-section-title__pre">
+                     {/* <span className="tp-section-title__pre">
                         service <span className="title-pre-color">IT Solutions</span>
                         <AngleArrow /> 
-                     </span>
+                     </span> */}
                      <h3 className="tp-section-title">
                         {sub_title_1}
                         <span className="title-color">
@@ -55,7 +59,7 @@ const SupportArea = ()  => {
                         )} 
                      </ul>
                      <div className="tp-support-breadcrumb-btn mb-30">
-                        <Link className="tp-btn" href="/service-details">Tell us How Can We Help</Link>
+                        <Link className="tp-btn" href="/service">Tell us How Can We Help</Link>
                      </div>
                   </div>
                </div>
@@ -65,13 +69,13 @@ const SupportArea = ()  => {
                      <Image className="shape-1" src={support_img_2} alt="theme-pure" />
                      <div className="shape-2 p-relative">
                         <Image src={support_img_3} alt="theme-pure" />
-                        <div className="tp-video-play">
+                        {/* <div className="tp-video-play">
                            <a className="popup-video" 
                            onClick={() => setIsVideoOpen(true)} 
                            ><i className="fa-sharp fa-solid fa-play"></i></a>
-                        </div>
+                        </div> */}
                      </div>
-                     <Image className="shape-3" src={support_shape} alt="theme-pure" />
+                     {/* <Image className="shape-3" src={support_shape} alt="theme-pure" /> */}
                   </div>
                </div>
             </div>
