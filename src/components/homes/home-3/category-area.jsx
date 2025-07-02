@@ -108,7 +108,7 @@ const CategoryArea = () => {
                             <div className="tp-category-content five">
                             <div className="tp-category-icon">
                                 <Image src={category_icon_5} alt="theme-pure" />
-                                <h4 className="tp-category-content-title">3D  <br />Modeling </h4>
+                                <h4 className="tp-category-content-title">3D<br />Modeling </h4>
                             </div> 
                             </div>
                         </div>
