@@ -87,7 +87,7 @@ const IndustryArea = ({ service }) => {
                     className="nav nav-pills mb-3 flex-nowrap"
                     id="pills-tab"
                     role="tablist"
-                    style={{ overflowX :"scroll"}}
+                    style={{ overflowX :"auto"}}
                   >
                     <li className="nav-item" role="presentation">
                       <button
