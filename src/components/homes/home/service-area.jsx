@@ -22,7 +22,7 @@ import reload_img from "@assets/img/fun-fact/world.png";
 const counter_content = [
   {
     id: 1,
-    count: 10,
+    count: 2,
     info: "Experience",
     cls: "",
     cls_2: "purecounter",
@@ -30,7 +30,7 @@ const counter_content = [
   },
   {
     id: 2,
-    count: 35,
+    count: 10,
     info: "clients",
     cls: "purecounter",
     cls_2: "",
@@ -38,7 +38,7 @@ const counter_content = [
   },
   {
     id: 3,
-    count: 75,
+    count: 20,
     info: "Projects",
     cls: "purecounter",
     cls_2: "",
