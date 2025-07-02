@@ -90,7 +90,7 @@ const our_service_data = [
     icon: service_icon_8,
     title: (
       <>
-        Product Animation <br /> and CGI Advertisement
+        CGI Advertisement
       </>
     ),
     description: <>High-quality renders with lifelike lighting and textures.</>,
