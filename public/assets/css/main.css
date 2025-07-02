@@ -2613,7 +2613,7 @@ div.demo img {
   font-style: italic;
   font-weight: 500;
   font-size: 16px;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
   color: var(--tp-text-2);
   display: inline-block;
   margin-bottom: 22px;

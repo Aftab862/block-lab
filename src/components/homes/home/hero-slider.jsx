@@ -35,11 +35,11 @@ const slider_data = [
   {
     id: 1,
     bg_img: "/assets/img/hero/hero-2.jpg",
-    sub_title_1: "best",
-    sub_title_2: "it solutions",
-    hero_title_1: "platform of",
-    hero_title_2: "Tech",
-    hero_support: "support",
+    sub_title_1: "Welcome",
+    sub_title_2: "to",
+    hero_title_1: "Block Lab",
+    hero_title_2: "Where Ideas Meet",
+    hero_support: "Innovation",
   },
   // {
   //   id: 2,
@@ -89,11 +89,11 @@ const HeroSlider = () => {
                   <div className="tp-hero-inner-1">
                     <div className="container">
                       <div className="tp-hero-shape">
-                        {shapes.map((shape, index)  => 
+                        {/* {shapes.map((shape, index)  => 
                               <Image key={index} 
                                className={`shape-${shape.id_cls}`} 
                                src={shape.img} alt="theme-pure" />
-                        )}
+                        )} */}
                        </div>
                       <div className="tp-hero-1">
                         <div className="tp-hero-bg tp-hero-overlay p-relative"
@@ -102,9 +102,9 @@ const HeroSlider = () => {
                           <div className="col-lg-7">
                             <div className="tp-hero-content p-relative">
                               <div className="tp-hero-title-wrapper">
-                                <span className="tp-section-title__pre p-relative">
+                                <span className="tp-section-title__pre p-relative text-capitalize">
                                   {item.sub_title_1}{" "}
-                                  <span className="title-pre-color">
+                                  <span className="title-pre-color text-lowercase">
                                     {item.sub_title_2}
                                   </span>
                                   <AngleArrow />
@@ -162,13 +162,13 @@ const HeroSlider = () => {
             </button>
           </div>
 
-          <div className="tp-hero-bottom">
+          {/* <div className="tp-hero-bottom">
             <div className="tp-hero-experince">
               <span className="year"> 13
                 <br /> <i className="experince">Years of Experince</i>
               </span>
             </div>
-          </div>
+          </div> */}
 
           <div
             className="tp-hero-service"
@@ -178,9 +178,14 @@ const HeroSlider = () => {
               <Image src={service_shape} alt="theme-pure" />
             </div>
             <p>
-              Our company provides a full range of <span>services</span> for the
+At BlockLab, we don't follow trends — we create them.
+  Let’s turn your <span> vision 
+    </span> into a 
+  digital reality.
+
+              {/* Our company provides a full range of <span>services</span> for the
               cons <br />
-              private houses and cottages since 19
+              private houses and cottages since 19 */}
             </p>
             <div className="tp-hero-service-quote">
               <Image src={service_quote} alt="theme-pure" />

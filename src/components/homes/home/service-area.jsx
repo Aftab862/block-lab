@@ -22,7 +22,7 @@ import reload_img from "@assets/img/fun-fact/world.png";
 const counter_content = [
   {
     id: 1,
-    count: 10,
+    count: 2,
     info: "Experience",
     cls: "",
     cls_2: "purecounter",
@@ -30,19 +30,19 @@ const counter_content = [
   },
   {
     id: 2,
-    count: 255,
-    info: "square area",
+    count: 10,
+    info: "clients",
     cls: "purecounter",
     cls_2: "",
-    icon: "",
+    icon: "+",
   },
   {
     id: 3,
-    count: 310,
-    info: "square area",
+    count: 20,
+    info: "Projects",
     cls: "purecounter",
     cls_2: "",
-    icon: "",
+    icon: "+",
   },
 ];
 const ServiceArea = () => {
@@ -110,7 +110,7 @@ const ServiceArea = () => {
                     <AngleArrow />
                   </span> */}
                   <h3 className="tp-section-title">
-                    All Professional <i>IT Solutions</i> & Services
+                   Innovative Edge<i> IT Solutions</i> & Services
                     <span className="title-center-shape">
                       <LineArrowTwo />
                     </span>
@@ -168,11 +168,11 @@ const ServiceArea = () => {
                 src={fun_fact_shape_1}
                 alt="theme-pure"
               />
-              <Image
+              {/* <Image
                 className="shape-2"
                 src={fun_fact_shape_2}
                 alt="theme-pure"
-              />
+              /> */}
               <Image
                 className="shape-3"
                 src={fun_fact_shape_3}
@@ -183,11 +183,11 @@ const ServiceArea = () => {
                 src={fun_fact_shape_4}
                 alt="theme-pure"
               />
-              <Image
+              {/* <Image
                 className="shadow"
                 src={fun_fact_shape_5}
                 alt="theme-pure"
-              />
+              /> */}
             </div>
 
             <div className="row">
@@ -214,7 +214,7 @@ const ServiceArea = () => {
                 </div>
               </div>
 
-              <div className="col-lg-6 col-md-12 text-center">
+              <div className="col-lg-6 col-md-12  text-md-right">
                 <div className="tp-fun-fact-content">
                   <div className="tp-fun-fact-title-wrapper">
                     {/* <span className="tp-section-title__pre">
@@ -223,15 +223,15 @@ const ServiceArea = () => {
                       <AngleArrow />
                     </span> */}
                     <h3 className="tp-section-title">
-                      Tech Change The World
+                      Tech that Transforms the World
+
                       <span className="title-left-shape">
                         <LineArrowTwo />
                       </span>
                     </h3>
-                    <p>
-                      Our company provides a full range of services for the
-                      construction of <br /> private houses and cottages since
-                      19
+                    <p  >
+                     We offer a complete suite of professional IT services to meet all your digital needs.
+                      
                     </p>
                     <ul>
                       <li>
@@ -239,16 +239,16 @@ const ServiceArea = () => {
                           {" "}
                           <GreenRightArrow />
                         </span>
-                        series of manual and semi-manual activities.
+                        Manual and semi-automated tasks define IT operations.
                       </li>
                       <li>
                         <span>
                           <GreenRightArrow />{" "}
                         </span>
-                        onstruction is different from other industries.
+                        IT stands out through smart tools and hands-on work.
                       </li>
                     </ul>
-                    <div className="tp-fun-fact-btn">
+                    <div className="tp-fun-fact-btn text-center text-md-start ">
                       <Link className="tp-btn" href="/contact">
                         Tell us How Can We Help
                       </Link>

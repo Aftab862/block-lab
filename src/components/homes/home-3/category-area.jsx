@@ -91,7 +91,7 @@ const CategoryArea = () => {
                             <div className="tp-category-content three">
                             <div className="tp-category-icon">
                                 <Image src={category_icon_3} alt="theme-pure" />
-                                <h4 className="tp-category-content-title">Data <br /> services</h4>
+                                <h4 className="tp-category-content-title">Block chain</h4>
                             </div>
                             </div>
                         </div>
@@ -101,14 +101,15 @@ const CategoryArea = () => {
                             <div className="tp-category-content four">
                             <div className="tp-category-icon">
                                 <Image src={category_icon_4} alt="theme-pure" />
-                                <h4 className="tp-category-content-title">Cyber security</h4>
+                                <h4 className="tp-category-content-title">Designing</h4>
                             </div>
+                            
                             </div>
                             <div className="tp-category-content five">
                             <div className="tp-category-icon">
                                 <Image src={category_icon_5} alt="theme-pure" />
-                                <h4 className="tp-category-content-title">Education</h4>
-                            </div>
+                                <h4 className="tp-category-content-title">3D<br />Modeling </h4>
+                            </div> 
                             </div>
                         </div>
                     </div>
@@ -117,7 +118,7 @@ const CategoryArea = () => {
                     <div className="col-lg-12">
                         <div className="tp-offer-all-btn text-center mt-50">
                             <p>Bring them together and you overcome the ordinary. 
-                                <Link href="/service-details">
+                                <Link href="/service">
                                     View More SErvice <span><i className="fa-regular fa-plus"></i></span>
                                 </Link>
                             </p>

@@ -10,17 +10,17 @@ const social_links = [
   {
     link: "https://x.com/Blocklabtech",
     target: "_blank",
-    icon: "fab fa-twitter", 
+    icon: "fab fa-twitter fs-5", 
   },
   {
     link: "https://www.linkedin.com/company/94862954/admin/dashboard/",
     target: "_blank",
-    icon: "fa-brands fa-linkedin", 
+    icon: "fa-brands fa-linkedin  fs-5", 
   }, 
   {
     link: "https://www.youtube.com/@BlockLabTech",
     target: "_blank",
-    icon: "fa-brands fa-youtube", 
+    icon: "fa-brands fa-youtube fs-5", 
   },
 ];
 
