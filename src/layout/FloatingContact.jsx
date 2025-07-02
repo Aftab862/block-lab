@@ -1,13 +1,33 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import Link from "next/link";
+
+const useIsMobile = (query = "(max-width: 768px)") => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(query);
+    const handleChange = () => setIsMobile(mediaQuery.matches);
+
+    handleChange(); // set initial value
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, [query]);
+
+  return isMobile;
+};
 
 const FloatingContactButton = () => {
   const [hover, setHover] = useState(false);
+ const isMobile = useIsMobile();
+
+ 
+
+
 
   const style = {
     position: "fixed",
-    bottom: "120px",
-    right: "50px",
+    bottom: isMobile ? "20%" : "120px",
+    right:isMobile ? "5%": "50px",
     backgroundColor: hover ? "#21E8FE" : "#24A3F2",
     color: "white",
     borderRadius: "50%",
