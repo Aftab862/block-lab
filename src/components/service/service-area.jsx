@@ -7,7 +7,7 @@ import React from "react";
 const ServiceArea = () => {
   return (
     <>
-      <section className="tp-service-breadcrumb-area p-relative pt-120">
+      <section className="tp-service-breadcrumb-area p-relative pt-120 pb-120">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">

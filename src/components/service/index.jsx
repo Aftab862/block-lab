@@ -17,7 +17,7 @@ const Sevice = () => {
             <Breadcrumb top_title="Our Services" page_title="Service" />
             <ServiceArea />
             {/* <VideoArea service={true}/> */}
-            <IndustryArea service={true} />
+            {/* <IndustryArea service={true} /> */}
             {/* <BrandArea service={true} /> */}
             {/* <BlogArea service={true} /> */}
             {/* <FooterContact /> */}
