@@ -7,8 +7,8 @@ import { useState } from "react";
 import Image from "next/image";
 
 
-import support_img_1 from "@assets/img/about/home-3/img-1.jpg";
-import support_img_2 from "@assets/img/about/home-3/img-2.jpg";
+import support_img_1 from "@assets/img/about/home-3/img-1.png";
+import support_img_2 from "@assets/img/about/home-3/img-2.png";
 import support_img_3 from "@assets/img/about/home-3/img-3.jpg";
 import support_shape from "@assets/img/about/home-3/shape-1.png";
 
@@ -65,10 +65,10 @@ const SupportArea = ()  => {
                </div>
                <div className="col-lg-6">
                   <div className="tp-about-3-img p-relative fadeRight">
-                     <Image src={support_img_1} alt="theme-pure" />
-                     <Image className="shape-1" src={support_img_2} alt="theme-pure" />
+                     <Image src={support_img_2}  className="ms-5" alt="theme-pure" />
+                     <Image className="shape-1" src={support_img_1} alt="theme-pure" />
                      <div className="shape-2 p-relative">
-                        <Image src={support_img_3} alt="theme-pure" />
+                        {/* <Image src={support_img_3} alt="theme-pure" /> */}
                         {/* <div className="tp-video-play">
                            <a className="popup-video" 
                            onClick={() => setIsVideoOpen(true)} 

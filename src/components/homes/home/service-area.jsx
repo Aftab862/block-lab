@@ -23,7 +23,7 @@ const counter_content = [
   {
     id: 1,
     count: 2,
-    info: "Experience",
+    info: "Years of expertise",
     cls: "",
     cls_2: "purecounter",
     icon: "+",
@@ -31,7 +31,7 @@ const counter_content = [
   {
     id: 2,
     count: 10,
-    info: "clients",
+    info: "Clients",
     cls: "purecounter",
     cls_2: "",
     icon: "+",
