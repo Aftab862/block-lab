@@ -102,7 +102,7 @@ const Footer = () => {
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div className="tp-footer-widget tp-footer-col-1">
                   <div className="tp-footer-logo">
-                    <a href="index.html">
+                    <a href="/">
                       {" "}
                       <Image src={footer_logo} alt="theme-pure" />
                     </a>

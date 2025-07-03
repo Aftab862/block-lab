@@ -39,7 +39,7 @@ const menu_data = [
     id: 4,
     mega_menu: false,
     has_dropdown: false,
-    title: "Porfolio",
+    title: "Portfolio",
     link: "/portfolio",
     active: "",
     // sub_menus: [

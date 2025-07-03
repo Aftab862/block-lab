@@ -16,7 +16,7 @@ const Wrapper = ({ children }) => {
       {children}
       
       <ScrollToTop />
-      <FloatingContactButton />
+      {/* <FloatingContactButton /> */}
 
     </>
   );

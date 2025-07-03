@@ -1,57 +1,61 @@
-import React, { useState , useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
-const useIsMobile = (query = "(max-width: 768px)") => {
-  const [isMobile, setIsMobile] = useState(false);
+const SideFloatingContactButton = () => {
+  const [isHovered, setIsHovered] = useState(false);
 
-  useEffect(() => {
-    const mediaQuery = window.matchMedia(query);
-    const handleChange = () => setIsMobile(mediaQuery.matches);
-
-    handleChange(); // set initial value
-    mediaQuery.addEventListener("change", handleChange);
-    return () => mediaQuery.removeEventListener("change", handleChange);
-  }, [query]);
-
-  return isMobile;
-};
-
-const FloatingContactButton = () => {
-  const [hover, setHover] = useState(false);
- const isMobile = useIsMobile();
-
- 
-
-
-
-  const style = {
+  const containerStyle = {
     position: "fixed",
-    bottom: isMobile ? "20%" : "120px",
-    right:isMobile ? "5%": "50px",
-    backgroundColor: hover ? "#21E8FE" : "#24A3F2",
-    color: "white",
-    borderRadius: "50%",
-    padding: "16px",
-    fontSize: "22px",
-    zIndex: 9999,
-    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
-    transition: "background-color 0.3s ease, transform 0.2s ease",
-    transform: hover ? "scale(1.05)" : "scale(1)",
-    display: "inline-block",
-    textAlign: "center",
-    lineHeight: "1",
+    top: "70%",
+    right: "0",
+    zIndex: 1000,
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    transition: "all 0.3s ease",
+  };
+
+  const tabStyle = {
+    backgroundColor: "#21E8FE",
+    color: "#fff",
+    padding: "10px 8px",
+    writingMode: "vertical-rl",
+    textOrientation: "mixed",
+    fontWeight: "bold",
+    borderTopLeftRadius: "8px",
+    borderBottomLeftRadius: "8px",
     cursor: "pointer",
   };
 
+  const revealButtonStyle = {
+    marginRight: "-3px",
+    padding: "10px 16px",
+    backgroundColor: "#fff",
+    color: "#000",
+    borderRadius: "8px",
+    textDecoration: "none",
+    border:" 1px solid black",
+    whiteSpace: "nowrap",
+    transform: isHovered ? "translateX(0)" : "translateX(100%)",
+    opacity: isHovered ? 1 : 0,
+    transition: "all 0.3s ease",
+  };
+
   return (
-    <Link href="/contact" style={style}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-      aria-label="Contact Us"
+    <div
+      style={containerStyle}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-      <i className="fas fa-envelope"> </i>  
-    </Link>
+      {/* Reveal Button */}
+      {/* <Link href="/contact"> */}
+        <a style={revealButtonStyle}>Contact Us</a>
+      {/* </Link> */}
+
+      {/* Side Tab */}
+      <div style={tabStyle}>CONTACT NOW</div>
+    </div>
   );
 };
 
-export default FloatingContactButton;
+export default SideFloatingContactButton;
