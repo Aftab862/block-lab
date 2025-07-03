@@ -38,7 +38,7 @@ const ServiceArea = () => {
                   <div className="tp-service-3-content-thumb">
                     <Image src={item.icon} alt="theme-pure" />
                   </div>
-                  <p className="tp-service-breadcrumb-title text-black fs-5 fw-normal">
+                  <p className="tp-service-breadcrumb-title  fs-5 fw-normal">
                     {/* <Link href="/service-details"> */}
                     {item.title}
 
