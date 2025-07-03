@@ -96,7 +96,7 @@ const service_data = [
     alphabet: "R",
     title: (
       <>
-         CGI Advertisement
+         CGI  <br />Advertisement
       </>
     ),
     img: service_img_10,
