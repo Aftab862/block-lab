@@ -36,7 +36,7 @@ const Breadcrumb = ({
                   {top_title}
                   <Image src={breadcrumb_img} alt="theme-pure" />
                 </h3>
-                <div className="breadcrumb__list breadcrumb__list-translate">
+                {/* <div className="breadcrumb__list breadcrumb__list-translate">
                   <span className="text-white">
                     {" "}
                     <Link href="/">Home</Link>{" "}
@@ -50,7 +50,7 @@ const Breadcrumb = ({
                     <i className="fa-regular fa-angle-right"></i>{" "}
                   </span>
                   <span className="text-white">{page_title}</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
