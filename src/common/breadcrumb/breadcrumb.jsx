@@ -11,9 +11,21 @@ const Breadcrumb = ({
     <>
       <section
         className="breadcrumb__area breadcrumb-style pt-190 pb-210 p-relative z-index-1"
+        // style={{
+        //   backgroundImage: top_title ==="Contact Us" ? `url(/assets/img/breadcrumb/contact.jpg`:  `url(/assets/img/breadcrumb/breadcrumb-bg-1.jpg)`,
+        // }}
+
         style={{
-          backgroundImage: top_title ==="Contact Us" ? `url(/assets/img/breadcrumb/contact.jpg`:  `url(/assets/img/breadcrumb/breadcrumb-bg-1.jpg)`,
+          backgroundImage: `url(${{
+              "Contact Us": "/assets/img/breadcrumb/contact.jpg",
+              "Our Portfolio": "/assets/img/breadcrumb/portfolio.jpg",
+              "Our Services": "/assets/img/breadcrumb/services.jpg",
+              "about": "/assets/img/breadcrumb/company.jpg",
+            }[top_title] || "/assets/img/breadcrumb/breadcrumb-bg-1.jpg"
+            })`,
         }}
+
+
       >
         <div className="breadcrumb__bg-overlay m-img"></div>
         <div className="container">

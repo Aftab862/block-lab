@@ -7,11 +7,11 @@ import React, { useEffect, useRef, useState } from 'react';
 import  category_shape_1 from "@assets/img/category/shape-1.png";
 import  category_shape_2 from "@assets/img/category/shape-2.png";
 
-import category_icon_1 from "@assets/img/category/icon-1.png";
-import category_icon_2 from "@assets/img/category/icon-2.png";
-import category_icon_3 from "@assets/img/category/icon-3.png";
-import category_icon_4 from "@assets/img/category/icon-4.png";
-import category_icon_5 from "@assets/img/category/icon-5.png";
+import category_icon_1 from "@assets/img/category/icon (1).png";
+import category_icon_2 from "@assets/img/category/icon (2).png";
+import category_icon_3 from "@assets/img/category/icon (3).png";
+import category_icon_4 from "@assets/img/category/icon (4).png";
+import category_icon_5 from "@assets/img/category/icon (6).png";
 
 const CategoryArea = () => {
 
@@ -74,14 +74,14 @@ const CategoryArea = () => {
                         <div className="tp-category-content-wrapper d-flex">
                             <div className="tp-category-content one">
                             <div className="tp-category-icon">
-                                <Image src={category_icon_1} alt="theme-pure" />
-                                <h4 className="tp-category-content-title">Consulting</h4>
+                                <Image width={80} src={category_icon_3} alt="theme-pure" />
+                                <h4 className="tp-category-content-title mt-0">Consulting</h4>
                             </div>
                             </div>
                             <div className="tp-category-content two">
                             <div className="tp-category-icon">
-                                <Image src={category_icon_2} alt="theme-pure" />
-                                <h4 className="tp-category-content-title">Software</h4>
+                                <Image width={80} src={category_icon_5} alt="theme-pure" />
+                                <h4 className="tp-category-content-title mt-0">Software</h4>
                             </div>
                             </div>
                         </div>
@@ -90,8 +90,8 @@ const CategoryArea = () => {
                         <div className="tp-category-content-wrapper d-flex">
                             <div className="tp-category-content three">
                             <div className="tp-category-icon">
-                                <Image src={category_icon_3} alt="theme-pure" />
-                                <h4 className="tp-category-content-title">Block chain</h4>
+                                <Image width={80} src={category_icon_2} alt="theme-pure" />
+                                <h4 className="tp-category-content-title mt-0">Block chain</h4>
                             </div>
                             </div>
                         </div>
@@ -100,15 +100,15 @@ const CategoryArea = () => {
                         <div className="tp-category-content-wrapper d-flex">
                             <div className="tp-category-content four">
                             <div className="tp-category-icon">
-                                <Image src={category_icon_4} alt="theme-pure" />
-                                <h4 className="tp-category-content-title">Designing</h4>
+                                <Image width={80} src={category_icon_4} alt="theme-pure" />
+                                <h4 className="tp-category-content-title mt-0">Designing</h4>
                             </div>
                             
                             </div>
                             <div className="tp-category-content five">
                             <div className="tp-category-icon">
-                                <Image src={category_icon_5} alt="theme-pure" />
-                                <h4 className="tp-category-content-title">3D<br />Modeling </h4>
+                                <Image width={80} src={category_icon_1} alt="theme-pure" />
+                                <h4 className="tp-category-content-title mt-0">3D<br />Modeling </h4>
                             </div> 
                             </div>
                         </div>

@@ -10,7 +10,7 @@ const Portfolio = () => {
     <>
       <HeaderOne />
       <main>
-        <Breadcrumb top_title="Our Portfolio"  page_title="Portfolio" />
+        <Breadcrumb top_title="Our Portfolio"  page_title="Our Portfolio" />
         <PortfolioArea />
         {/* <FooterContact bg_style={true} /> */}
       </main>

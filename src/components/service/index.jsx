@@ -14,7 +14,7 @@ const Sevice = () => {
     <>
       <HeaderOne />
       <main>
-            <Breadcrumb top_title="Our Services" page_title="Service" />
+            <Breadcrumb top_title="Our Services" page_title="Our Services" />
             <ServiceArea />
             {/* <VideoArea service={true}/> */}
             {/* <IndustryArea service={true} /> */}
