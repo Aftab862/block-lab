@@ -47,8 +47,13 @@ const counter_content = [
 ];
 const ServiceArea = () => {
   const setting = {
-    type: "loop",
-    drag: "free",
+    type: 'loop',
+    hasAutoplayProgress: true,
+    perMove: 1,
+    autoplay: true,
+    interval: 1500,
+resetProgress:true,
+    lazyLoad: "sequential",
     pagination: false,
     arrows: true,
     perPage: 5,
@@ -56,22 +61,22 @@ const ServiceArea = () => {
     breakpoints: {
       1800: {
         perPage: 5,
-         gap: "30px",
+        gap: "30px",
       },
       1500: {
         perPage: 4,
-         gap: "30px",
+        gap: "30px",
       },
       1200: {
         perPage: 3,
-         gap: "30px",
+        gap: "30px",
       },
       800: {
         perPage: 2,
       },
       566: {
         perPage: 1,
-        gap:"0px"
+        gap: "0px"
       },
     },
   };
@@ -110,7 +115,7 @@ const ServiceArea = () => {
                     <AngleArrow />
                   </span> */}
                   <h3 className="tp-section-title">
-                   Innovative Edge<i> IT Solutions</i> & Services
+                    Innovative Edge<i> IT Solutions</i> & Services
                     <span className="title-center-shape">
                       <LineArrowTwo />
                     </span>
@@ -230,8 +235,8 @@ const ServiceArea = () => {
                       </span>
                     </h3>
                     <p  >
-                     We offer a complete suite of professional IT services to meet all your digital needs.
-                      
+                      We offer a complete suite of professional IT services to meet all your digital needs.
+
                     </p>
                     <ul>
                       <li>
