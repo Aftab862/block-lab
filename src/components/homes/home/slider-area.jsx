@@ -1,15 +1,21 @@
 import React, {useRef} from 'react';
-import icon from "@assets/img/icon/icon-1.png";
+import icon1 from "@assets/img/icon/slider-icon (1).png";
+import icon2 from "@assets/img/icon/slider-icon (2).png";
+import icon3 from "@assets/img/icon/slider-icon (3).png";
+import icon4 from "@assets/img/icon/slider-icon (4).png";
+import icon5 from "@assets/img/icon/slider-icon (5).png";
 import Image from 'next/image';
 import Slider from "react-slick";
 
+
+
 const slider_data = [
-    {id: 1,  title: <>Backup <span>Services</span></>},
-    {id: 2,  title: <>Backup <span>Services</span></>},
-    {id: 3,  title: <>Machine <span>Learning</span></>},
-    {id: 4,  title: <>Programming <span>Learning</span></>},
-    {id: 5,  title: <>website <span>Learning</span></>},
-    {id: 6,  title: <>Graphics <span>Learning</span></>},
+    {id: 1, img:icon4 , title: <>Block EX </>},
+    {id: 2, img:icon5 , title: <>Just Touch </>},
+    {id: 3, img:icon1 , title: <>Block Puzzle </>},
+    {id: 4, img:icon2 , title: <>VRC Network </>},
+    {id: 5, img:icon3 , title: <>Konnect </>},
+    // {id: 6,  title: <>Graphics <span>Learning</span></>},
 ]
 
 const setting = {
@@ -39,10 +45,10 @@ const SliderArea = () => {
                   <div className="tp-text-slider">
                      <Slider {...setting} ref={sliderRef} className="tp-text-active">
                         {slider_data.map((item, i) => 
-                            <div key={i} className="tp-text-item">
+                            <div key={i} className="tp-text-item ">
                                 <div className="tp-text-slider-wrapper">
                                     <div className="tp-text-slider-item d-flex align-items-center">
-                                        <Image width={50} src={icon} alt="theme-pure" />
+                                        <Image width={150} height={50}  src={item?.img} alt="theme-pure" />
                                         <h6 className="text-titlee">{item.title}</h6>
                                     </div>
                                 </div>

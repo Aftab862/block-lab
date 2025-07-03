@@ -34,14 +34,14 @@
         }
     }
     &-wrapper{
-        background: #0D1130;
+        background: #21e8fe8f;
         border-radius: 5px;
         position: relative;
         text-align: center;
         overflow: hidden;
         padding: 65px 0 50px 0;
         transition: all .3s ease-in-out;
-        border: 1px solid #0D1130;
+        border: 1px solid #21e8fe8f;
         &:hover{
             border: 1px solid #21E8FE;
         }
@@ -150,7 +150,7 @@
             & p{
                 font-weight: 400;
                 font-size: 16px;
-                color: #9C9C9C;
+                // color: #9C9C9C;
                 @media #{$lg,$md,$sm,$xs} {
                     margin-bottom: 40px;
                 }
@@ -219,7 +219,7 @@
             & p{
                 font-weight: 400;
                 font-size: 16px;
-                color: #9C9C9C;
+                // color: #9C9C9C;
                 margin-bottom: 22px;
             }
             & .tp-service-btn{
