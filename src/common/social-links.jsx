@@ -17,11 +17,11 @@ const social_links = [
     target: "_blank",
     icon: "fa-brands fa-linkedin  fs-5", 
   }, 
-  {
-    link: "https://www.youtube.com/@BlockLabTech",
-    target: "_blank",
-    icon: "fa-brands fa-youtube fs-5", 
-  },
+  // {
+  //   link: "https://www.youtube.com/@BlockLabTech",
+  //   target: "_blank",
+  //   icon: "fa-brands fa-youtube fs-5", 
+  // },
 ];
 
 const SocialLinks = () => {

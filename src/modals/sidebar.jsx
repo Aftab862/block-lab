@@ -58,9 +58,10 @@ const Sidebar = ({sidebarOpen, setSidebarOpen, home_three}) => {
                     <div className="tp-mobile-menu-pos mean-container d-lg-none">
                         <MobileMenus />
                     </div>
-                    {/* <div className="offcanvas__popup">
-                        <p>Web designing in a powerful way of just not an only professions. We have tendency to believe the idea that smart looking .</p>
-                        <div className="offcanvas__popup-gallery">
+                    <div className="offcanvas__popup ">
+                     <p>
+                        At BlockLab, we don’t just create digital products — we design experiences that move people, we bring bold ideas to life with smart design, powerful tech, and strategic thinking.</p>   
+                        {/* <div className="offcanvas__popup-gallery">
                             <h4 className="offcanvas__title">Gallery</h4>
                             {images.map((item, i) => 
                                 <a key={i} style={{ cursor: "pointer" }} 
@@ -69,9 +70,9 @@ const Sidebar = ({sidebarOpen, setSidebarOpen, home_three}) => {
                                     <Image src={item.img} alt="theme-pure" />
                                 </a>
                             )}
-                        </div>
-                    </div> */}
-                    <div className="offcanvas__contact">
+                        </div> */}
+                    </div>
+                    <div className="offcanvas__contact mt-55">
                         <h4 className="offcanvas__title">Contacts</h4>
                         {/* <div className="offcanvas__contact-content d-flex">
                             <div className="offcanvas__contact-content-icon">
@@ -101,7 +102,7 @@ const Sidebar = ({sidebarOpen, setSidebarOpen, home_three}) => {
                     <div className="offcanvas__social"> 
                         {/* <a className="icon facebook" href="#"><i className="fab fa-facebook-f"></i></a> */}
                         <a className="icon twitter" href="https://x.com/Blocklabtech"><i className="fab fa-twitter"></i></a>
-                        <a className="icon youtube" href="https://www.youtube.com/@BlockLabTech"><i className="fab fa-youtube"></i></a>
+                        {/* <a className="icon youtube" href="https://www.youtube.com/@BlockLabTech"><i className="fab fa-youtube"></i></a> */}
                         <a className="icon linkedin" href="https://www.linkedin.com/company/94862954/admin/dashboard/"><i className="fab fa-linkedin"></i></a>
                     </div>
                 </div>
