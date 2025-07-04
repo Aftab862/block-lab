@@ -104,6 +104,9 @@
                     opacity: 1;
                 }
             }
+              & img{
+               filter: brightness(0) invert(1);
+            }
             & .tp-category-content-title{
                 color: var(--tp-common-white);
             }

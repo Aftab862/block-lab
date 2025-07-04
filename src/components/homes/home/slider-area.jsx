@@ -13,21 +13,21 @@ const slider_data = [
     {id: 1, img:icon4 , title: <>Block EX </>},
     {id: 2, img:icon5 , title: <>Just Touch </>},
     {id: 3, img:icon1 , title: <>Block Puzzle </>},
-    {id: 4, img:icon2 , title: <>VRC Network </>},
+    // {id: 4, img:icon2 , title: <>VRC Network </>},
     {id: 5, img:icon3 , title: <>Konnect </>},
     // {id: 6,  title: <>Graphics <span>Learning</span></>},
 ]
 
 const setting = {
-    speed: 3000,
+    speed: 5000,
     autoplay: true,
-    autoplaySpeed: 0,
+    autoplaySpeed: 1000,
     cssEase: 'linear',
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
     infinite: true,
-    initialSlide: 1,
+    // initialSlide: 1,
     arrows: false,
     buttons: false,
     pauseOnFocus: false,
@@ -49,7 +49,7 @@ const SliderArea = () => {
                                 <div className="tp-text-slider-wrapper">
                                     <div className="tp-text-slider-item d-flex align-items-center">
                                         <Image width={150} height={50}  src={item?.img} alt="theme-pure" />
-                                        <h6 className="text-titlee">{item.title}</h6>
+                                        {/* <h6 className="text-titlee">{item.title}</h6> */}
                                     </div>
                                 </div>
                              </div>                        

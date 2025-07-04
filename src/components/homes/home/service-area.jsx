@@ -73,10 +73,11 @@ resetProgress:true,
       },
       800: {
         perPage: 2,
+         gap: "30px",
       },
       566: {
         perPage: 1,
-        gap: "0px"
+        gap: "30px"
       },
     },
   };
@@ -199,7 +200,7 @@ resetProgress:true,
               <div className="col-lg-2 col-md-4 d-flex justify-content-center">
                 <div className="tp-fun-fact-wrapper-box">
                   {counter_content.map((item, i) => (
-                    <div key={i} className="tp-fun-fact-wrapper">
+                    <div key={i} className="tp-fun-fact-wrapper d-flex justify-content-center align-items-center align-items-md-start flex-column">
                       <h3 className={`counter-title ${item.cls}`}>
                         <span
                           data-purecounter-duration="4"
