@@ -5,6 +5,10 @@ import  portfolio_img_3 from "@assets/img/portfolio/img-3.jpg";
 import  portfolio_img_4 from "@assets/img/portfolio/img-4.jpg";
 import  portfolio_img_5 from "@assets/img/portfolio/img-5.jpg";
 import  portfolio_img_6 from "@assets/img/portfolio/img-6.jpg"; 
+import  portfolio_img_7 from "@assets/img/portfolio/img-7.jpg";
+import  portfolio_img_8 from "@assets/img/portfolio/img-8.jpg";
+import  portfolio_img_9 from "@assets/img/portfolio/img-9.jpg";
+import  portfolio_img_10 from "@assets/img/portfolio/img-10.jpg"; 
 
 
 const portfolio_data = [
@@ -44,5 +48,30 @@ const portfolio_data = [
         catagory: "Business Consulting",
         title: "Business Analytics",
     },
+      {
+        id: 7, 
+        img: portfolio_img_7,
+        catagory: "Figma Design",
+        title: "Market Research",
+    },
+    {
+        id: 8, 
+        img: portfolio_img_8,
+        catagory: "Technology",
+        title: "IT Specialist",
+    },
+    {
+        id: 9, 
+        img: portfolio_img_9,
+        catagory: "Business Consulting",
+        title: "Business Analytics",
+    },
+      {
+        id: 10, 
+        img: portfolio_img_10,
+        catagory: "Figma Design",
+        title: "Market Research",
+    },
+ 
 ]
 export default portfolio_data
