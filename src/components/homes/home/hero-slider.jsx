@@ -14,12 +14,12 @@ import shape_3 from "@assets/img/hero/shape-3.png";
 import shape_4 from "@assets/img/hero/shape-4.png";
 import shape_5 from "@assets/img/hero/shape-7.png";
 import service_shape from "@assets/img/hero/shape-5.png";
-import service_quote from "@assets/img/hero/quot.png";
+import service_quote from "@assets/img/hero/quot.webp";
 
 // slider setting 
 const setting = {
   slidesPerView: 1,
-  spaceBetween: 0, 
+  spaceBetween: 0,
   effect: "fade",
   autoplay: {
     delay: 5000,
@@ -61,27 +61,27 @@ const slider_data = [
   // },
 ];
 // shapes 
-const shapes = [ 
-   {id_cls: 1, img: shape_1},
-   {id_cls: 2, img: shape_2},
-   {id_cls: 3, img: shape_3},
-   {id_cls: 4, img: shape_4},
-   {id_cls: 7, img: shape_5},
+const shapes = [
+  { id_cls: 1, img: shape_1 },
+  { id_cls: 2, img: shape_2 },
+  { id_cls: 3, img: shape_3 },
+  { id_cls: 4, img: shape_4 },
+  { id_cls: 7, img: shape_5 },
 ]
 
 const HeroSlider = () => {
   const [isLoop, setIsLoop] = useState(false)
-    useEffect(() => {
-     setIsLoop(true)
-    }, [])
-    
+  useEffect(() => {
+    setIsLoop(true)
+  }, [])
+
 
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
     <>
       <section className="tp-hero-area tp-hero-space pb-95">
-        <div className="tp-hero-wrapper p-relative"> 
+        <div className="tp-hero-wrapper p-relative">
           <div className="hero-active-1 swiper-container">
             <Swiper {...setting} loop={isLoop} modules={[Navigation, EffectFade]}>
               {slider_data.map((item, i) => (
@@ -94,10 +94,11 @@ const HeroSlider = () => {
                                className={`shape-${shape.id_cls}`} 
                                src={shape.img} alt="theme-pure" />
                         )} */}
-                       </div>
+                      </div>
                       <div className="tp-hero-1">
                         <div className="tp-hero-bg tp-hero-overlay p-relative"
-                          style={{ backgroundImage: `url(${item.bg_img})`}}></div>
+                          style={{ backgroundImage: `url(${item.bg_img})` }}
+                          ></div>
                         <div className="row">
                           <div className="col-lg-7">
                             <div className="tp-hero-content p-relative">
@@ -172,16 +173,16 @@ const HeroSlider = () => {
 
           <div
             className="tp-hero-service"
-            style={{ backgroundImage: `url(/assets/img/hero/shape-6.png)` }} 
+            style={{ backgroundImage: `url(/assets/img/hero/shape-6.png)` }}
           >
             <div className="tp-hero-service-shape">
               <Image src={service_shape} alt="theme-pure" />
             </div>
             <p>
-At BlockLab, we don't follow trends — we create them.
-  Let’s turn your <span> vision 
-    </span> into a 
-  digital reality.
+              At BlockLab, we don't follow trends — we create them.
+              Let’s turn your <span style={{ color: "#21E8FE" }}> vision
+              </span> into a
+              digital reality.
 
               {/* Our company provides a full range of <span>services</span> for the
               cons <br />
@@ -191,7 +192,7 @@ At BlockLab, we don't follow trends — we create them.
               <Image src={service_quote} alt="theme-pure" />
             </div>
           </div>
-          
+
         </div>
       </section>
 
