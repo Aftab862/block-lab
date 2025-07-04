@@ -1,10 +1,14 @@
 import our_service_data from "@/src/data/our-service-data";
+
 import AngleArrow from "@/src/svg/angle-arrow";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const ServiceArea = () => {
+  const [hover, setHover] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   return (
     <>
       <section className="tp-service-breadcrumb-area p-relative pt-120 pb-120">
@@ -17,7 +21,7 @@ const ServiceArea = () => {
                   <AngleArrow />
                 </span> */}
                 <h3 className="tp-section-title">
-                Explore Our  
+                  Explore Our
                   <br /> <span className="title-color"> Digital & IT Services</span>
                 </h3>
               </div>
@@ -33,7 +37,11 @@ const ServiceArea = () => {
           </div>
           <div className="row">
             {our_service_data.map((item, i) => (
-              <div key={i} className="col-xl-3 col-lg-4 col-md-6 mb-3">
+              <div  className="col-xl-3 col-lg-4 col-md-6 mb-3"
+                key={i}
+  onMouseEnter={() => setHoveredIndex(i)}
+  onMouseLeave={() => setHoveredIndex(null)}
+              >
                 <div className="tp-service-3-content breadcrumb-item mb-30 d-flex flex-column h-100">
                   <div className="tp-service-3-content-thumb">
                     <Image src={item.icon} alt="theme-pure" />
@@ -44,7 +52,16 @@ const ServiceArea = () => {
 
                     {/* </Link> */}
                   </p>
-                  <p className="flex-grow-1">{item.description}</p>
+                  <p
+                    className="flex-grow-1"
+                    style={{
+                      color: hoveredIndex === i ? 'white' : 'grey',
+                      transition: 'color 0.3s',
+                    }}
+                  >
+                    {item.description}
+                  </p>
+
                   {/* <div className="tp-service-btn mt-auto">
                     <Link href="/service-details">
                       Read More <i className="fa-solid fa-arrow-up-right"></i>

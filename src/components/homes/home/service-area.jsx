@@ -131,13 +131,13 @@ resetProgress:true,
                 >
                   {service_data.map((item, i) => (
                     <SplideSlide key={i}>
-                      <div className="tp-service-wrapper p-relative mb-55">
+                      <div className="tp-service-wrapper p-relative ">
                         <div className="tp-service-designation">
                           <p>{item.alphabet}</p>
                         </div>
                         <h3 className="service-title">{item.title}</h3>
                         <div className="tp-service-icon">
-                          <Image src={item.img} width={150} alt="theme-pure" />
+                          <Image src={item.img} width={160} alt="theme-pure" />
                         </div>
                         <p className="hide-text">{item.description}</p>
                         {/* <div className="tp-service-btn">

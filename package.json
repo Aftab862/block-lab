@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.8.1",
     "bootstrap": "^5.2.3",
     "dotenv": "^16.5.0",
     "next": "13.3.0",
