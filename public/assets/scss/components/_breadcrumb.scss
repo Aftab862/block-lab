@@ -4,13 +4,14 @@
 /*  2.11 Breadcrumb
 /*----------------------------------------*/
 
-.breadcrumb{
-    &__area{
+.breadcrumb {
+    &__area {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
-    &__title{
+
+    &__title {
         position: relative;
         font-weight: 700;
         font-size: 52px;
@@ -18,17 +19,20 @@
         color: #121D2C;
         margin-bottom: 25px;
         text-transform: capitalize;
-        & img{
+
+        & img {
             position: absolute;
             bottom: -5px;
-            right: 35%;
+            right: 0%;
             z-index: -1;
+
             @media #{$xs} {
                 bottom: -10px;
                 right: 27%;
             }
         }
-        &-pre{
+
+        &-pre {
             display: inline-block;
             height: 24px;
             line-height: 26px;
@@ -43,8 +47,9 @@
             margin-bottom: 12px;
         }
     }
-    &__list{
-        & span{
+
+    &__list {
+        & span {
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
@@ -52,8 +57,9 @@
             padding-right: 3px;
             margin-right: 3px;
             text-transform: capitalize;
-            & a{
-                &:hover{
+
+            & a {
+                &:hover {
                     color: var(--tp-theme-primary);
                 }
             }
