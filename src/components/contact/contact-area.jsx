@@ -1,7 +1,10 @@
 import ContactForm from "@/src/forms/contact-form";
 import EmailIconOne from "@/src/svg/email-icon-1";
 import PhoneIcon from "@/src/svg/phone-icon";
+import Image from "next/image";
 import React from "react";
+import logoImg from "@assets/img/logo/footer-logo.svg"
+
 
 const ContactArea = () => {
   return (
@@ -13,15 +16,15 @@ const ContactArea = () => {
               <div className="tp-contact-wrapper">
                 <div className="tp-contact-title-wrapper">
                   <h3 className="tp-contact-title">
-                    Contact <span className="title-color">With us</span>
+                    Send us an  <span className="title-color">Email</span>
                   </h3>
-               <p>
+                  <p>
                     Email, call, or complete the form to learn how Kion can{" "}
                     <br />
                     solve your cloud management and governance cha.
-                  </p>  
+                  </p>
                 </div>
-           <div className="tp-contact-content">
+                <div className="tp-contact-content">
                   <div className="tp-contact-content-mail d-flex align-items-center">
                     <div className="tp-contact-content-mail-icon">
                       <span>
@@ -33,6 +36,9 @@ const ContactArea = () => {
                         info@blocklab.com
                       </a>
                     </h3>
+                  </div>
+                  <div className="d-flex align-items-center mt-5 d-none d-md-block  justify-content-start ">
+                    <Image src={logoImg} width={250} />
                   </div>
                   {/* <div className="tp-contact-content-phone d-flex align-items-center">
                     <div className="tp-contact-content-phone-icon">
@@ -60,19 +66,19 @@ const ContactArea = () => {
                       <p>4517 Washington Ave. Manch ester, Kentucky 39495</p>
                     </div>
                   </div> */}
-                </div>  
+                </div>
               </div>
             </div>
 
             <div className="col-lg-6">
               <div className="tp-contact-form">
-                <h3 className="tp-contact-title ">
+                {/* <h3 className="tp-contact-title ">
                   Contact <span className="title-color"> Us</span>
                 </h3>
                 <p>
                   Your email address will not be published. Required fields{" "}
                   <br /> are marked *
-                </p>
+                </p> */}
                 <ContactForm />
                 <p className="ajax-response"></p>
               </div>

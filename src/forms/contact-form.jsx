@@ -74,10 +74,12 @@ const ContactForm = () => {
           ].map(({ name, type, placeholder }) => (
             <div className="col-md-6" key={name}>
               <div className="tp-contact-input">
+                <label style={{ color: "#171717" }}> {placeholder}</label>
                 <input
                   name={name}
                   type={type}
-                  placeholder={placeholder}
+                  size="sm"
+                  // placeholder={placeholder}
                   value={formData[name]}
                   onChange={handleChange}
                   required
@@ -88,19 +90,24 @@ const ContactForm = () => {
 
           <div className="col-md-12">
             <div className="tp-contact-input">
+              <label style={{ color: "#171717" }} >
+                Enter Your Message here
+              </label>
               <textarea
                 name="message"
-                placeholder="Enter Your Message here*"
+                // placeholder="Enter Your Message here*"
                 value={formData.message}
                 onChange={handleChange}
                 required
+                rows={2}
+
               />
             </div>
           </div>
 
           <div className="tp-contact-btn mt-10">
             <button type="submit" className="tp-btn" disabled={isSubmitting}>
-              {isSubmitting ? "Sending..." : "Send Message"}
+              {isSubmitting ? "Sending..." : "Submit"}
             </button>
           </div>
         </div>

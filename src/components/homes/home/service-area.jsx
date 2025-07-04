@@ -23,7 +23,7 @@ const counter_content = [
   {
     id: 1,
     count: 2,
-    info: "Years of expertise",
+    info: "Years of Expertise",
     cls: "",
     cls_2: "purecounter",
     icon: "+",
@@ -52,7 +52,7 @@ const ServiceArea = () => {
     perMove: 1,
     autoplay: true,
     interval: 1500,
-resetProgress:true,
+    resetProgress: true,
     lazyLoad: "sequential",
     pagination: false,
     arrows: true,
@@ -73,7 +73,7 @@ resetProgress:true,
       },
       800: {
         perPage: 2,
-         gap: "30px",
+        gap: "30px",
       },
       566: {
         perPage: 1,
@@ -169,11 +169,11 @@ resetProgress:true,
         <section className="tp-fun-fact-area pt-80 pb-65 p-relative">
           <div className="container container-1400">
             <div className="tp-fun-fact-shape">
-              <Image
+              {/* <Image
                 className="shape-1"
                 src={fun_fact_shape_1}
                 alt="theme-pure"
-              />
+              /> */}
               {/* <Image
                 className="shape-2"
                 src={fun_fact_shape_2}
