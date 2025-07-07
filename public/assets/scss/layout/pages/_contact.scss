@@ -196,6 +196,22 @@
       }
     }
 
+    .react-tel-input {
+      .form-control {
+        width: 100% !important;
+        height: 60px !important;
+        border: 1px solid #d4dce0;
+        background-color: #f8f8f9;
+        // padding: 0 25px;
+        color: var(--tp-common-black);
+
+        &:focus {
+          border: 1px solid #21E8FE !important;
+          box-shadow: 0 0 0 0.3px #21E8FE;
+        }
+      }
+    }
+
     & textarea {
       height: auto;
       background-color: #f8f8f9;
