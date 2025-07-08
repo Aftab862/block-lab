@@ -32,11 +32,12 @@ const slider_data = [
 ]
 
 const setting = {
-    speed: 5000,
     autoplay: true,
-    autoplaySpeed: 1000,
-    cssEase: 'linear',
-    slidesToShow: 1,
+speed: 1000,
+speed: 5000,
+autoplaySpeed: 0,
+cssEase: 'linear',
+
     slidesToScroll: 1,
     variableWidth: true,
     infinite: true,
@@ -44,7 +45,7 @@ const setting = {
     arrows: false,
     buttons: false,
     pauseOnFocus: false,
-    pauseOnHover: true,
+    pauseOnHover: false,
 }
 
 const SliderArea = () => {
