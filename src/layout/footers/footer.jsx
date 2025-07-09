@@ -32,19 +32,19 @@ const footer_content = {
       86 Road Broklyn Street, 600 <br /> New York, USA
     </>
   ),
-  mail_2: "info@blocklab.com",
+  mail_2: "info@blocklabtech.com",
   mail_phone: (
     <>
       {" "}
-      info@blocklab.com <br /> +92 666 888 0000
+      info@blocklabtech.com <br /> +92 666 888 0000
     </>
   ),
 
   service_links: [
-    {id :1 , name: "Our Company", url: "/about" },
-    {id : 2, name: "Our Services", url: "/service" },
-    {id : 3, name: "Our Portfolio", url: "/portfolio" },
-    {id : 4, name: "Contact Us", url: "/contact" },
+    { id: 1, name: "Our Company", url: "/about" },
+    { id: 2, name: "Our Services", url: "/service" },
+    { id: 3, name: "Our Portfolio", url: "/portfolio" },
+    { id: 4, name: "Contact Us", url: "/contact" },
   ],
 };
 
@@ -67,7 +67,7 @@ const Footer = () => {
       <footer className="tp-footer-area p-relative">
         <div
           className="tp-footer-bg"
-          // style={{backgroundImage: `url(/assets/img/footer/footer-bg.jpg)`}}
+        // style={{backgroundImage: `url(/assets/img/footer/footer-bg.jpg)`}}
         ></div>
         {/* <div className="tp-footer-top-shape" style={{backgroundImage: `url(/assets/img/footer/footer-top-bg.png)`}}></div> */}
 

@@ -32,8 +32,8 @@ const ContactArea = () => {
                       </span>
                     </div>
                     <h3 className="tp-contact-item-title">
-                      <a href="mailto:info@blocklab.com">
-                        info@blocklab.com
+                      <a href="mailto:info@blocklabtech.com">
+                        info@blocklabtech.com
                       </a>
                     </h3>
                   </div>
