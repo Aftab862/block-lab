@@ -67,7 +67,7 @@ const Breadcrumb = ({
 
                                   <h3 className="breadcrumb__title   text-white ">
                                     {top_title}
-                                    <Image src={breadcrumb_img} alt="theme-pure" />
+                                    <LineArrow src={breadcrumb_img} alt="theme-pure" />
                                   </h3>
 
                                 </span>
