@@ -13,9 +13,10 @@ import category_icon_3 from "@assets/img/category/icon (3).png";
 import category_icon_4 from "@assets/img/category/icon (4).png";
 import category_icon_5 from "@assets/img/category/icon (6).png";
 import SimpleParticles from '@/src/common/particle-animation';
+import { useMobile } from '@/src/hooks/mobile';
 
 const CategoryArea = () => {
-
+const isMobile=useMobile()
 
 
     return (
@@ -23,9 +24,9 @@ const CategoryArea = () => {
 
 
 
-            <div className="container pt-120 pb-120 " style={{ position: "relative" }}>
+            <div className="container pt-60 pb-60" style={{ position: "relative" }}>
 
-                <div style={{ position: "absolute" }}>
+             <div style={{ position: "absolute" , display:isMobile ? "none": "block" }}>
                     <SimpleParticles />
                 </div>
 
@@ -92,7 +93,7 @@ const CategoryArea = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-12">
+                    {/* <div className="col-lg-12">
                         <div className="tp-offer-all-btn text-center mt-50">
                             <p>Bring them together and you overcome the ordinary.
                                 <Link href="/service">
@@ -100,7 +101,7 @@ const CategoryArea = () => {
                                 </Link>
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

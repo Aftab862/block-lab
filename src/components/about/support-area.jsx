@@ -5,12 +5,14 @@ import RightSymbol from "@/src/svg/right-symbol";
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
-
+import {useMobile } from "@/src/hooks/mobile";
 
 import support_img_1 from "@assets/img/about/home-3/img-1.png";
 import support_img_2 from "@assets/img/about/home-3/img-2.png";
 import support_img_3 from "@assets/img/about/home-3/img-3.jpg";
 import support_shape from "@assets/img/about/home-3/shape-1.png";
+
+
 
 const support_contact = {
    sub_title_1: "Proudly Here for",
@@ -31,13 +33,13 @@ const {sub_title_1, sub_title_2, info, lists} = support_contact
 
 const SupportArea = ()  => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
-
+const isMobile=useMobile()
     return(
         <>
         <section className="tp-support-breadcrumb fix pt-120 pb-210">
          <div className="container">
             <div className="row">
-               <div className="col-lg-6">
+               <div className={`col-lg-6 ${isMobile?"text-center" :""}`}>
                   <div className="tp-fun-fact-title-wrapper support-breadcrumb">
                      {/* <span className="tp-section-title__pre">
                         service <span className="title-pre-color">IT Solutions</span>
@@ -48,7 +50,7 @@ const SupportArea = ()  => {
                         <span className="title-color">
                         {sub_title_2}
                         </span>
-                        <span className="title-left-shape">
+                        <span className="title-left-shape w-100">
                            <LineArrowTwo />
                         </span>
                      </h3>

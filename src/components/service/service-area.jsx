@@ -4,17 +4,22 @@ import AngleArrow from "@/src/svg/angle-arrow";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import {useMobile} from "@/src/hooks/mobile";
 
 const ServiceArea = () => {
   const [hover, setHover] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
+
+  const isMobile= useMobile();
   return (
     <>
       <section className="tp-service-breadcrumb-area p-relative pt-120 pb-120">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className={`col-lg-6 ${isMobile ?"text-center":""} `}>
+
+
               <div className="tp-service-breadcrumb-title-wrapper">
                 {/* <span className="tp-section-title__pre">
                   service <span className="title-pre-color">IT Solutions</span>
@@ -42,7 +47,7 @@ const ServiceArea = () => {
   onMouseEnter={() => setHoveredIndex(i)}
   onMouseLeave={() => setHoveredIndex(null)}
               >
-                <div className="tp-service-3-content breadcrumb-item mb-30 d-flex flex-column h-100">
+                <div className={`tp-service-3-content breadcrumb-item mb-30 d-flex flex-column h-100 ${isMobile?"text-center" : ""}`}>
                   <div className="tp-service-3-content-thumb">
                     <Image src={item.icon} alt="theme-pure" />
                   </div>

@@ -15,6 +15,7 @@ import shape_4 from "@assets/img/hero/shape-4.png";
 import shape_5 from "@assets/img/hero/shape-7.png";
 import service_shape from "@assets/img/hero/shape-5.png";
 import service_quote from "@assets/img/hero/quot.webp";
+import { useMobile } from '@/src/hooks/mobile';
 
 // slider setting 
 const setting = {
@@ -71,6 +72,8 @@ const shapes = [
 
 const HeroSlider = () => {
   const [isLoop, setIsLoop] = useState(false)
+  const isMobile = useMobile();
+
   useEffect(() => {
     setIsLoop(true)
   }, [])
@@ -103,16 +106,16 @@ const HeroSlider = () => {
                           <div className="col-lg-7">
                             <div className="tp-hero-content p-relative">
                               <div className="tp-hero-title-wrapper">
-                                <span className="tp-section-title__pre p-relative text-capitalize">
+                                <span className={`${isMobile ? "text-white" :""} tp-section-title__pre p-relative text-capitalize text-md-black`}>
                                   {item.sub_title_1}{" "}
                                   <span className="title-pre-color text-lowercase">
                                     {item.sub_title_2}
                                   </span>
                                   <AngleArrow />
                                 </span>
-                                <h3 className="tp-hero-title">
-                                  {item.hero_title_1} <LineArrow />
-                                  <span className="title-color">
+                                <h3 className={`${isMobile ? "text-white" :""} tp-hero-title `} >
+                                  {item.hero_title_1} <LineArrow /> <br />
+                                  <span     className="title-color">
                                     {item.hero_title_2}
                                   </span>{" "}
                                   <br />{" "}

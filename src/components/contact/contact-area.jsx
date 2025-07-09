@@ -4,15 +4,19 @@ import PhoneIcon from "@/src/svg/phone-icon";
 import Image from "next/image";
 import React from "react";
 import logoImg from "@assets/img/logo/footer-logo.svg"
+import {useMobile } from "@/src/hooks/mobile";
+
 
 
 const ContactArea = () => {
+  const isMobile= useMobile();
   return (
     <>
       <section className="tp-contact-area pt-50 pb-50">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-6">
+            <div className={`col-lg-6 ${isMobile?"text-center" :""}`}>
+                         
               <div className="tp-contact-wrapper">
                 <div className="tp-contact-title-wrapper">
                   <h3 className="tp-contact-title">
@@ -24,7 +28,7 @@ const ContactArea = () => {
                     solve your cloud management and governance cha.
                   </p>
                 </div>
-                <div className="tp-contact-content">
+                <div className={`${isMobile? "d-flex align-items-center flex-column":""} tp-contact-content`}>
                   <div className="tp-contact-content-mail d-flex align-items-center">
                     <div className="tp-contact-content-mail-icon">
                       <span>
@@ -37,6 +41,8 @@ const ContactArea = () => {
                       </a>
                     </h3>
                   </div>
+
+
                   <div className="d-flex align-items-center mt-5 d-none d-md-block  justify-content-start ">
                     <Image src={logoImg} width={250} />
                   </div>

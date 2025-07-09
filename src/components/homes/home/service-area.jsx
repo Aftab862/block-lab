@@ -220,7 +220,7 @@ const ServiceArea = () => {
                 </div>
               </div>
 
-              <div className="col-lg-6 col-md-12  text-md-right">
+              <div className="col-lg-6 col-md-12 text-center text-md-start">
                 <div className="tp-fun-fact-content">
                   <div className="tp-fun-fact-title-wrapper">
                     {/* <span className="tp-section-title__pre">
@@ -231,23 +231,23 @@ const ServiceArea = () => {
                     <h3 className="tp-section-title">
                       Tech that Transforms the World
 
-                      <span className="title-left-shape">
+                      <span className="title-left-shape w-100 ">
                         <LineArrowTwo />
                       </span>
                     </h3>
-                    <p  >
+                    <p className="text-white" >
                       We offer a complete suite of professional IT services to meet all your digital needs.
 
                     </p>
                     <ul>
-                      <li>
+                      <li className="text-white">
                         <span>
                           {" "}
                           <GreenRightArrow />
                         </span>
                         Manual and semi-automated tasks define IT operations.
                       </li>
-                      <li>
+                      <li className="text-white">
                         <span>
                           <GreenRightArrow />{" "}
                         </span>

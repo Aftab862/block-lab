@@ -14,6 +14,7 @@ import icon10 from "@assets/img/icon/slider-icon (10).png";
 
 import Image from 'next/image';
 import Slider from "react-slick";
+import { useMobile } from '@/src/hooks/mobile';
 
 
 
@@ -33,10 +34,10 @@ const slider_data = [
 
 const setting = {
     autoplay: true,
-speed: 1000,
-speed: 5000,
-autoplaySpeed: 0,
-cssEase: 'linear',
+    speed: 1000,
+    speed: 5000,
+    autoplaySpeed: 0,
+    cssEase: 'linear',
 
     slidesToScroll: 1,
     variableWidth: true,
@@ -50,10 +51,16 @@ cssEase: 'linear',
 
 const SliderArea = () => {
     const sliderRef = useRef(null)
+    
+    const isMobile=useMobile();
+    console.log("isMobile",isMobile)
     return (
         <>
-            <section className="tp-text-slider-area fix pt-100 pb-100">
-                <div className="container-fluid gx-0">
+            <section className={`tp-text-slider-area fix  ${isMobile ?"pb-100 pt-15" : "pt-100 pb-100" } `}  >
+                <h3 className="tp-section-title text-center">
+                    <span className="">Our Projects</span> <br />
+                </h3>
+                <div className="container-fluid gx-0 mt-40">
                     <div className="row gx-0">
                         <div className="col-lg-12">
                             <div className="tp-text-slider">
