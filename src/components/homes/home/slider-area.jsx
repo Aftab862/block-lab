@@ -53,31 +53,21 @@ const SliderArea = () => {
     console.log("isMobile",isMobile)
     return (
         <>
-            <section className={`tp-text-slider-area fix  ${isMobile ?"pb-100 pt-15" : "pt-100 pb-100" } `}  >
-                <h3 className="tp-section-title text-center">
-                    <span className="">Our Projects</span> <br />
-                </h3>
-                <div className="container-fluid gx-0 mt-40">
-                    <div className="row gx-0">
-                        <div className="col-lg-12">
-                            <div className="tp-text-slider">
-                                <Slider {...setting} ref={sliderRef} className="tp-text-active">
-                                    {slider_data.map((item, i) =>
-                                        <div key={i} className="tp-text-item ">
-                                            <div className="tp-text-slider-wrapper">
-                                                <div className="tp-text-slider-item d-flex align-items-center">
-                                                    <Image width={150} height={50} src={item?.img} alt="theme-pure" />
-                                                    {/* <h6 className="text-titlee">{item.title}</h6> */}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )}
-                                </Slider>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+         <section className={`tp-text-slider-area fix ${isMobile ? "pb-100 pt-15" : "pt-100 pb-100"}`}>
+  <h3 className="tp-section-title text-center">
+    <span>Our Projects</span> <br />
+  </h3>
+  <div className="custom-slider-container">
+    <div className="custom-slider-track">
+      {[...slider_data, ...slider_data].map((item, i) => (
+        <div className="custom-slide" key={i}>
+          <Image width={150} height={50} src={item.img} alt="project-icon" />
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
         </>
     );
 };
