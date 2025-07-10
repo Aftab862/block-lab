@@ -83,6 +83,11 @@
 .mfp-hide {
   display: none !important; }
 
+
+  .splide__arrow{
+  background-color: #21E8FE !important;
+}
+
 .mfp-preloader {
   color: #CCC;
   position: absolute;
