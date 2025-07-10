@@ -119,7 +119,7 @@ const HeroSlider = () => {
                                     {item.hero_title_2}
                                   </span>{" "}
                                   <br />{" "}
-                                  <span className="title-text-transparent">
+                                  <span className={`${isMobile} ?"":"title-text-transparent"`}>
                                     {item.hero_support}
                                   </span>
                                 </h3>
