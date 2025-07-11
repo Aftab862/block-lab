@@ -19,57 +19,57 @@ import { useMobile } from '@/src/hooks/mobile';
 
 
 const slider_data = [
-    { id: 1, img: icon1, title: <>Block EX </> },
-    { id: 2, img: icon2, title: <>Just Touch </> },
-    { id: 3, img: icon3, title: <>Block Puzzle </> },
-    { id: 4, img: icon4, title: <>Konnect </> },
+  { id: 1, img: icon1, title: <>Block EX </> },
+  { id: 2, img: icon2, title: <>Just Touch </> },
+  { id: 3, img: icon3, title: <>Block Puzzle </> },
+  { id: 4, img: icon4, title: <>Konnect </> },
 
-    { id: 5, img: icon5, title: <>Block EX </> },
-    { id: 6, img: icon6, title: <>Just Touch </> },
-    { id: 7, img: icon7, title: <>Block Puzzle </> },
-    { id: 8, img: icon8, title: <>Konnect </> },
-    { id: 9, img: icon9, title: <>Block Puzzle </> },
-    { id: 10, img: icon10, title: <>Konnect </> },
+  { id: 5, img: icon5, title: <>Block EX </> },
+  { id: 6, img: icon6, title: <>Just Touch </> },
+  { id: 7, img: icon7, title: <>Block Puzzle </> },
+  { id: 8, img: icon8, title: <>Konnect </> },
+  { id: 9, img: icon9, title: <>Block Puzzle </> },
+  { id: 10, img: icon10, title: <>Konnect </> },
 ]
 
 const setting = {
- autoplay: true,
-infinite: true,
-slidesToScroll: 1,
-slidesToShow: 1, // optional if using variableWidth
-variableWidth: true,
-speed: 5000,
-autoplaySpeed: 0,
-cssEase: 'linear',
-pauseOnHover: false,
-pauseOnFocus: false,
-arrows: false,
+  autoplay: true,
+  infinite: true,
+  slidesToScroll: 1,
+  slidesToShow: 1, // optional if using variableWidth
+  variableWidth: true,
+  speed: 5000,
+  autoplaySpeed: 0,
+  cssEase: 'linear',
+  pauseOnHover: false,
+  pauseOnFocus: false,
+  arrows: false,
 }
 
 const SliderArea = () => {
-    const sliderRef = useRef(null)
-    
-    const isMobile=useMobile();
-    console.log("isMobile",isMobile)
-    return (
-        <>
-         <section className={`tp-text-slider-area fix ${isMobile ? "pb-100 pt-15" : "pt-100 pb-100"}`}>
-  <h3 className="tp-section-title text-center">
-    <span>Our Projects</span> <br />
-  </h3>
-  <div className="custom-slider-container">
-    <div className="custom-slider-track">
-      {[...slider_data, ...slider_data].map((item, i) => (
-        <div className="custom-slide" key={i}>
-          <Image   src={item.img} alt="project-icon" />
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+  const sliderRef = useRef(null)
 
-        </>
-    );
+  const isMobile = useMobile();
+  console.log("isMobile", isMobile)
+  return (
+    <>
+      <section className={`tp-text-slider-area fix ${isMobile ? "pb-100 pt-15" : "pt-100 pb-100"}`}>
+        <h3 className="tp-section-title text-center">
+          <span>Our Projects</span> <br />
+        </h3>
+        <div className="custom-slider-container">
+          <div className="custom-slider-track">
+            {[...slider_data, ...slider_data].map((item, i) => (
+              <div className="custom-slide" key={i}>
+                <Image src={item.img} alt="project-icon" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+    </>
+  );
 };
 
 export default SliderArea;
