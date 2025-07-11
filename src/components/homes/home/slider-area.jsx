@@ -61,7 +61,7 @@ const SliderArea = () => {
     <div className="custom-slider-track">
       {[...slider_data, ...slider_data].map((item, i) => (
         <div className="custom-slide" key={i}>
-          <Image width={150} height={50} src={item.img} alt="project-icon" />
+          <Image   src={item.img} alt="project-icon" />
         </div>
       ))}
     </div>
