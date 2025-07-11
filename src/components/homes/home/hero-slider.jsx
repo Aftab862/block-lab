@@ -71,12 +71,9 @@ const shapes = [
 ]
 
 const HeroSlider = () => {
-  const [isLoop, setIsLoop] = useState(false)
   const isMobile = useMobile();
 
-  useEffect(() => {
-    setIsLoop(true)
-  }, [])
+
 
 
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -86,7 +83,7 @@ const HeroSlider = () => {
       <section className="tp-hero-area tp-hero-space pb-95">
         <div className="tp-hero-wrapper p-relative">
           <div className="hero-active-1 swiper-container">
-            <Swiper {...setting} loop={isLoop} modules={[Navigation, EffectFade]}>
+            <Swiper >
               {slider_data.map((item, i) => (
                 <SwiperSlide key={i}>
                   <div className="tp-hero-inner-1">

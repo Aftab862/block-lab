@@ -101,9 +101,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, home_three }) => {
                         </div>
                         <div className="offcanvas__social">
                             {/* <a className="icon facebook" href="#"><i className="fab fa-facebook-f"></i></a> */}
-                            <a className="icon twitter" href="https://x.com/Blocklabtech"><i className="fab fa-twitter"></i></a>
+                            <a className="icon twitter"   target="_blank" href="https://x.com/Blocklabtech"><i className="fab fa-twitter"></i></a>
                             {/* <a className="icon youtube" href="https://www.youtube.com/@BlockLabTech"><i className="fab fa-youtube"></i></a> */}
-                            <a className="icon linkedin" href="https://www.linkedin.com/company/94862954/admin/dashboard/"><i className="fab fa-linkedin"></i></a>
+                            <a className="icon linkedin"   target= "_blank" href="https://www.linkedin.com/company/94862954/admin/dashboard/"><i className="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>

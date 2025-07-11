@@ -12,20 +12,9 @@ const Breadcrumb = ({
   page_title = "Our Company",
 }) => {
 
-  const [isLoop, setIsLoop] = useState(false)
-  useEffect(() => {
-    setIsLoop(true)
-  }, [])
 
-  const setting = {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    effect: "fade",
-    autoplay: {
-      delay: 5000,
-    },
 
-  };
+
 
 
   return (
@@ -35,7 +24,7 @@ const Breadcrumb = ({
       >
 
         <div className="hero-active-1 swiper-container">
-          <Swiper {...setting} loop={isLoop} modules={[Navigation, EffectFade]}>
+          <Swiper >
             <SwiperSlide >
               <div className="tp-hero-inner-1">
                 <div className="container">
