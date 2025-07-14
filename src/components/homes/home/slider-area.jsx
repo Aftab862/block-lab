@@ -11,10 +11,15 @@ import icon7 from "@assets/img/icon/slider-icon (7).png";
 import icon8 from "@assets/img/icon/slider-icon (8).png";
 import icon9 from "@assets/img/icon/slider-icon (9).png";
 import icon10 from "@assets/img/icon/slider-icon (10).png";
+import icon12 from "@assets/img/icon/slider-icon (12).png";
+
 
 import Image from 'next/image';
-import Slider from "react-slick";
+
+
+
 import { useMobile } from '@/src/hooks/mobile';
+import Link from 'next/link';
 
 
 
@@ -55,16 +60,23 @@ const SliderArea = () => {
     <>
       <section className={`tp-text-slider-area fix ${isMobile ? "pb-100 pt-15" : "pt-100 pb-100"}`}>
         <h3 className="tp-section-title text-center">
-          <span>Our Projects</span> <br />
+          <span>Our Project</span> <br />
         </h3>
-        <div className="custom-slider-container">
-          <div className="custom-slider-track">
+        <div className="custom-slider-container d-flex justify-content-center align-items-center">
+          {/* <div className="custom-slider-track">
             {[...slider_data, ...slider_data].map((item, i) => (
               <div className="custom-slide" key={i}>
                 <Image src={item.img} alt="project-icon" />
               </div>
             ))}
-          </div>
+          </div> */}
+          <Link href="https://exchangeblockex.com/"
+            target="_blank"
+            className="d-inline-block position-relative overflow-hidden" >
+            <Image src={icon12} width={200} alt="project-icon"
+
+            />
+          </Link>
         </div>
       </section>
 
