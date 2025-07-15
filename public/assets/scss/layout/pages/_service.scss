@@ -45,8 +45,9 @@
         border: 1px solid #21e8fe36;
         &:hover{
             border: 1px solid #21E8FE;
-            background: #21E8FE;
-            opacity: 0.7;
+            // background: #21E8FE;
+            background-color: #21e8feb3;
+            // opacity: 0.7;
         }
         & .service-title {
             font-weight: 600;
