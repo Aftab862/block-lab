@@ -11,7 +11,7 @@ import icon7 from "@assets/img/icon/slider-icon (7).png";
 import icon8 from "@assets/img/icon/slider-icon (8).png";
 import icon9 from "@assets/img/icon/slider-icon (9).png";
 import icon10 from "@assets/img/icon/slider-icon (10).png";
-import icon12 from "@assets/img/icon/slider-icon (12).png";
+import icon12 from "@assets/img/icon/slider-icon (11).png";
 
 
 import Image from 'next/image';
@@ -73,7 +73,12 @@ const SliderArea = () => {
           <Link href="https://exchangeblockex.com/"
             target="_blank"
             className="d-inline-block position-relative overflow-hidden" >
-            <Image src={icon12} width={200} alt="project-icon"
+            <Image src={icon12} width={220} alt="project-icon"
+              style={{
+                transition: "transform 0.3s ease",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
+              onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
 
             />
           </Link>
